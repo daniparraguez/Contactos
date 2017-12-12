@@ -1,0 +1,9 @@
+.input-group{
+	display: inline-block;
+	padding-right: 4em;
+}
+#listaContactos {
+	padding-top: 100px;
+	height: 300px;
+	overflow: auto;
+}

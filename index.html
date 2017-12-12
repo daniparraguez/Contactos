@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<title>Lista de contactos</title>
+
+</head>
+<body>
+
+		<!-- Modal Agregar -->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Contactos</h4>
+				<form action="javascript:saveContact()"><!-- Guardar contacto -->
+						<div class="input-group">
+								<span class="input-group-addon" id="contact"><i class="material-icons">contacts</i></span>
+								<input id="nombreInput" type="text" class="form-control" placeholder="Nombre" aria-describedby="contact">
+						</div>
+
+						<div class="input-group">
+								<span class="input-group-addon" id="telefono"><i class="material-icons">local_phone</i>Teléfono</span>
+								<input id="telefonoInput" type="text" class="form-control" placeholder="10 dígitos" aria-describedby="telefono">
+						</div>
+				</form>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" id="agregar" class="modal-action modal-close waves-effect waves-green btn-flat">Agregar</a>
+		</div>
+	</div>
+
+		<!-- Modal Buscar -->
+	<div id="modal2" class="modal">
+		<div class="modal-content">
+			<h4>Modal Header</h4>
+			<p>A bunch of text</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+		</div>
+	</div>
+					
+
+
+	<div class="navbar-fixed">
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo"><i class="material-icons">person_pin</i>Lista de contactos</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#modal1" class="waves-effect waves-light btn modal-trigger"><i class="material-icons">add_circle</i></a></li>
+				<li><a href="#modal2" class="waves-effect waves-light btn modal-trigger"><i class="material-icons">search</i></a></li>
+			</ul>
+		</div>
+	</nav>
+
+		<div class="container" id="listaContactos"></div> <!-- Lista de Contactos -->
+
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
